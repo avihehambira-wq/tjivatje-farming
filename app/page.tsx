@@ -267,7 +267,8 @@ export default function Home() {
         <p>Total: {animals.length}</p>
       </div>
 
-      <div style={styles.dashboard as React.CSSProperties}>
+      <div style={styles.dashboard}>
+        ``
         {locations.map(loc => {
           const s = getStats(loc);
           return (
@@ -414,7 +415,7 @@ const styles = {
     display: "flex",
     gap: 15,
     marginBottom: 20,
-    flexWrap: "wrap" as React.CSSProperties["flexWrap"]
+    flexWrap: "wrap"
   },
 
   card: {
