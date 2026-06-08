@@ -267,7 +267,14 @@ export default function Home() {
         <p>Total: {animals.length}</p>
       </div>
 
-      <div style={styles.dashboard}>
+      <div
+        style={{
+          display: "flex",
+          gap: "15px",
+          marginBottom: "20px",
+          flexWrap: "wrap"
+        }}
+      >
         ``
         {locations.map(loc => {
           const s = getStats(loc);
@@ -413,8 +420,8 @@ const styles = {
 
   dashboard: {
     display: "flex",
-    gap: 15,
-    marginBottom: 20,
+    gap: "15px",
+marginBottom: "20px",
     flexWrap: "wrap"
   },
 
@@ -433,8 +440,8 @@ const styles = {
 
   form: {
     display: "grid",
-    gap: 10,
-    marginBottom: 20
+    gap: "15px",
+marginBottom: "20px",
   },
 
   input: {
