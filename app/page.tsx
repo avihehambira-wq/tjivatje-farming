@@ -409,11 +409,12 @@ const styles = {
     marginBottom: 20
   },
 
+
   dashboard: {
     display: "flex",
     gap: 15,
     marginBottom: 20,
-    flexWrap: "wrap" as const
+    flexWrap: "wrap" as React.CSSProperties["flexWrap"]
   },
 
   card: {
