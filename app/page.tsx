@@ -420,10 +420,9 @@ const styles = {
   dashboard: {
     display: "flex",
     gap: "15px",
-marginBottom: "20px",
+    marginBottom: "20px",
     flexWrap: "wrap"
   },
-
   card: {
     background: "#1e293b",
     padding: 15,
