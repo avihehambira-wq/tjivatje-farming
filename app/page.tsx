@@ -275,7 +275,6 @@ export default function Home() {
           flexWrap: "wrap"
         }}
       >
-        ``
         {locations.map(loc => {
           const s = getStats(loc);
           return (
