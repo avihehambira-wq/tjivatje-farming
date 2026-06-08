@@ -267,7 +267,7 @@ export default function Home() {
         <p>Total: {animals.length}</p>
       </div>
 
-      <div style={styles.dashboard}>
+      <div style={styles.dashboard as React.CSSProperties}>
         {locations.map(loc => {
           const s = getStats(loc);
           return (
