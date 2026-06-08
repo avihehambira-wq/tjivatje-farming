@@ -396,7 +396,7 @@ export default function Home() {
     </div>
   );
 }
-const styles: Record<string, React.CSSProperties> = {
+const styles = {
   container: {
     padding: 20,
     background: "#0f172a",
