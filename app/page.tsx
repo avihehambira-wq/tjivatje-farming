@@ -396,18 +396,94 @@ export default function Home() {
     </div>
   );
 }
-const styles = {
-  container: { padding: 20, background: "#0f172a", minHeight: "100vh", color: "#fff" },
-  title: { color: "#22c55e", marginBottom: 20 },
-  dashboard: { display: "flex", gap: 15, marginBottom: 20, flexWrap: "wrap" },
-  card: { background: "#1e293b", padding: 15, borderRadius: 10 },
-  totalCard: { background: "#166534", padding: 20, borderRadius: 10, marginBottom: 20 },
-  form: { display: "grid", gap: 10, marginBottom: 20 },
-  input: { padding: 10, background: "#1e293b", border: "1px solid #334155", color: "white" },
-  button: { background: "#22c55e", padding: 10, border: "none", borderRadius: 6, cursor: "pointer" },
-  listCard: { display: "flex", gap: 15, padding: 15, background: "#1e293b", borderRadius: 10, marginBottom: 10 },
-  img: { width: 100, height: 100, objectFit: "cover", borderRadius: 8 },
-  deleteBtn: { background: "#dc2626", color: "white", padding: 5, marginLeft: 5 },
-  modal: { position: "fixed", inset: 0, background: "rgba(0,0,0,0.9)", display: "flex", justifyContent: "center", alignItems: "center" },
-  modalImg: { maxWidth: "90%", maxHeight: "90%" }
+const styles: Record<string, React.CSSProperties> = {
+  container: {
+    padding: 20,
+    background: "#0f172a",
+    minHeight: "100vh",
+    color: "#fff"
+  },
+
+  title: {
+    color: "#22c55e",
+    marginBottom: 20
+  },
+
+  dashboard: {
+    display: "flex",
+    gap: 15,
+    marginBottom: 20,
+    flexWrap: "wrap"
+  },
+
+  card: {
+    background: "#1e293b",
+    padding: 15,
+    borderRadius: 10
+  },
+
+  totalCard: {
+    background: "#166534",
+    padding: 20,
+    borderRadius: 10,
+    marginBottom: 20
+  },
+
+  form: {
+    display: "grid",
+    gap: 10,
+    marginBottom: 20
+  },
+
+  input: {
+    padding: 10,
+    background: "#1e293b",
+    border: "1px solid #334155",
+    color: "white"
+  },
+
+  button: {
+    background: "#22c55e",
+    padding: 10,
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer"
+  },
+
+  listCard: {
+    display: "flex",
+    gap: 15,
+    padding: 15,
+    background: "#1e293b",
+    borderRadius: 10,
+    marginBottom: 10
+  },
+
+  img: {
+    width: 100,
+    height: 100,
+    objectFit: "cover",
+    borderRadius: 8
+  },
+
+  deleteBtn: {
+    background: "#dc2626",
+    color: "white",
+    padding: 5,
+    marginLeft: 5
+  },
+
+  modal: {
+    position: "fixed",
+    inset: 0,
+    background: "rgba(0,0,0,0.9)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+
+  modalImg: {
+    maxWidth: "90%",
+    maxHeight: "90%"
+  }
 };
