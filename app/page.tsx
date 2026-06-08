@@ -413,7 +413,7 @@ const styles: Record<string, React.CSSProperties> = {
     display: "flex",
     gap: 15,
     marginBottom: 20,
-    flexWrap: "wrap"
+    flexWrap: "wrap" as const
   },
 
   card: {
