@@ -469,7 +469,7 @@ marginBottom: "20px",
   img: {
     width: 100,
     height: 100,
-    objectFit: "cover" as const,
+    objectFit: "cover" as React.CSSProperties["objectFit"],
     borderRadius: 8
   },
   
