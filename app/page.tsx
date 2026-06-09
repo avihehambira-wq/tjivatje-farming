@@ -408,55 +408,50 @@ export default function Home() {
   );
 }
 const styles: Record<string, React.CSSProperties> = {
-  modal: {
-    position: "fixed",
-    inset: 0,
-    background: "rgba(0,0,0,0.9)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
+  container: {
+    padding: 20,
+    background: "#e2e8f0", // ✅ darker light gray
+    minHeight: "100vh",
+    color: "#0f172a"
   },
 
   title: {
-    color: "#22c55e",
+    color: "#166534", // ✅ deeper green
     marginBottom: 20
   },
 
-
-  dashboard: {
-    display: "flex",
-    gap: "15px",
-    marginBottom: "20px",
-    flexWrap: "wrap"
-  },
   card: {
-    background: "#1e293b",
+    background: "#f1f5f9",
     padding: 15,
-    borderRadius: 10
+    borderRadius: 10,
+    border: "1px solid #94a3b8"
   },
 
   totalCard: {
-    background: "#166534",
+    background: "#86efac", // ✅ stronger green
     padding: 20,
     borderRadius: 10,
-    marginBottom: 20
+    marginBottom: 20,
+    color: "#14532d"
   },
 
   form: {
     display: "grid",
     gap: "15px",
-marginBottom: "20px",
+    marginBottom: "20px"
   },
 
   input: {
     padding: 10,
-    background: "#1e293b",
-    border: "1px solid #334155",
-    color: "white"
+    background: "#f8fafc",
+    border: "1px solid #64748b", // ✅ darker border = clearer
+    color: "#0f172a",
+    borderRadius: 6
   },
 
   button: {
-    background: "#22c55e",
+    background: "#15803d", // ✅ darker green button
+    color: "white",
     padding: 10,
     border: "none",
     borderRadius: 6,
@@ -467,27 +462,32 @@ marginBottom: "20px",
     display: "flex",
     gap: 15,
     padding: 15,
-    background: "#1e293b",
+    background: "#f1f5f9",
     borderRadius: 10,
-    marginBottom: 10
+    marginBottom: 10,
+    border: "1px solid #94a3b8"
   },
 
-  img: {
-    width: 100,
-    height: 100,
-    objectFit: "cover" as React.CSSProperties["objectFit"],
-    borderRadius: 8
-  },
-  
   deleteBtn: {
-    background: "#dc2626",
+    background: "#b91c1c", // ✅ deeper red
     color: "white",
     padding: 5,
-    marginLeft: 5
+    marginLeft: 5,
+    borderRadius: 4
+  },
+
+  modal: {
+    position: "fixed",
+    inset: 0,
+    background: "rgba(0,0,0,0.75)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
   },
 
   modalImg: {
     maxWidth: "90%",
-    maxHeight: "90%"
+    maxHeight: "90%",
+    borderRadius: 10
   }
 };
