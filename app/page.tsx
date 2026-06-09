@@ -407,12 +407,14 @@ export default function Home() {
     </div>
   );
 }
-const styles = {
-  container: {
-    padding: 20,
-    background: "#0f172a",
-    minHeight: "100vh",
-    color: "#fff"
+const styles: Record<string, React.CSSProperties> = {
+  modal: {
+    position: "fixed",
+    inset: 0,
+    background: "rgba(0,0,0,0.9)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center"
   },
 
   title: {
@@ -482,15 +484,6 @@ marginBottom: "20px",
     color: "white",
     padding: 5,
     marginLeft: 5
-  },
-
-  modal: {
-    position: "fixed",
-    inset: 0,
-    background: "rgba(0,0,0,0.9)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center"
   },
 
   modalImg: {
