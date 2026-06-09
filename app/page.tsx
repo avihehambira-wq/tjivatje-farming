@@ -469,10 +469,10 @@ marginBottom: "20px",
   img: {
     width: 100,
     height: 100,
-    objectFit: "cover",
+    objectFit: "cover" as const,
     borderRadius: 8
   },
-
+  
   deleteBtn: {
     background: "#dc2626",
     color: "white",
